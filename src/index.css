@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", "Inter", serif;
+
+  --color-cream: #F8F3E9;
+  --color-soft-white: #FFFFFF;
+  --color-charcoal: #202020;
+  --color-muted: #5C5954;
+  --color-lavender: #DCCDF4;
+  --color-pastel-blue: #C9E5F3;
+  --color-pastel-pink: #F4D4D8;
+  --color-mint: #D7E9D5;
+  --color-warm-yellow: #F4D98B;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #F8F3E9;
+    color: #202020;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-urdu {
+    font-family: var(--font-urdu);
+    line-height: 2.1;
+  }
+
+  :focus-visible {
+    outline: 2px solid #202020;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

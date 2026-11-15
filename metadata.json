@@ -1,0 +1,6 @@
+{
+  "name": "Ishara — Pakistan Sign Language Learning",
+  "description": "An accessible, interactive educational platform for learning authentic Pakistan Sign Language (PSL) through visual lessons, Urdu and English guides, and structured practice.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
